@@ -25,3 +25,5 @@ text = re.sub("[^\w ]", "", text)
 words = text.split(" ")
 count = Counter(words).most_common(20)
 count
+
+
