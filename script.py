@@ -42,19 +42,11 @@ df_fake
 df_fake["text_new"] = df_fake['text'].str.lower().str.replace('[^\w\s]','')
 new_df_1 = df_fake.text_new.str.split(expand=True).stack().value_counts().reset_index()
 new_df_1.columns = ['Word', 'Frequency']
-new_df_1
+head_df_1 = new_df_1.head(20)
+head_df_1
 
-# Make a scatter plot for the word frequency in the text of fake news
-x2 = []
-y2 = []
-y2.append(new_df_1[0])
-y2.append(new_df_1[1])
-
-plt.scatter.plot(x2, y2)
-plt.title("The frequency of words for fake news")
-plt.xlabel("Word")
-plt.ylabel("Frequency")
-plt.show()
+# Make a bar plot for the word frequency in the text of fake news
+head_df_1.plot.barh(x="Word", y = "Frequency")
 
 # Extract data for real news from a label column
 df_real = df.loc[df['label'] == "REAL", ['text']]
@@ -65,16 +57,8 @@ df_real
 df_real["text_new"] = df_real['text'].str.lower().str.replace('[^\w\s]','')
 new_df_2 = df_real.text_new.str.split(expand=True).stack().value_counts().reset_index()
 new_df_2.columns = ['Word', 'Frequency']
-new_df_2
+head_df_2 = new_df_2.head(20)
+head_df_2
 
-# Make a scatter plot for the word frequency in the text of real news
-x3 = []
-y3 = []
-y3.append(new_df_2[0])
-y3.append(new_df_2[1])
-
-plt.scatter.plot(x3, y3)
-plt.title("The frequency of words for real news")
-plt.xlabel("Word")
-plt.ylabel("Frequency")
-plt.show()
+# Make a bar plot for the word frequency in the text of real news
+head_df_2.plot.barh(x="Word", y = "Frequency")
