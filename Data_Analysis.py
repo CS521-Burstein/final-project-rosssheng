@@ -1,5 +1,6 @@
 import script
-
+import matplotlib.pyplot as plt
+import requests
 df = script.df
 data_frame = script.data_frame
 
