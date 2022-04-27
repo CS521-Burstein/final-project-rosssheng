@@ -19,6 +19,7 @@ data_frame = pd.DataFrame(df)
 # Count the number of fake and real news
 df_1 = df.groupby(['label'])['label'].count()
 
+# Make a bar graph for total number of fake and real news
 x1 = ['Fake', 'Real']
 y1 = []
 y1.append(df_1[0])
@@ -26,7 +27,6 @@ y1.append(df_1[1])
 
 c = ['red', 'blue']
 
-# Make a bar graph for total number of fake and real news
 plt.bar(x1, y1, color=c)
 plt.title("Total Number of Fake and Real News")
 plt.xlabel("Fake/Real")
