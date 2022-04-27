@@ -29,3 +29,6 @@ both do a version of trying to use a classifier model.
 Ross: I created the file Machine Learning Classifier and prediction model.ipynb, processed the data byb removing useless words from the data,
 	converted strings to integer counts, split the data for training, and created/used a classifier model from sklearn and printed a classification 
 	report as well as a few bar graphs to display. 
+
+Futaba: I created the file 'machine learning 2'. It processes removing the non-required value, cleaning the data, dividing the data into 
+train and test set, classifying the data, comparing train data to test data, calculating the accuracy of predict value, and printing classification report.
