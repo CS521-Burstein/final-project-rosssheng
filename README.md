@@ -5,6 +5,7 @@ Script includes code to download csv data through pandas
 
 4/15 Deliverable:
 
+
 1. Made a bar graph that charts the total volume of fake and real news there are: We found that the total number is relatively the same, though off by about 100. 
 
 2. We also made another bar graph that graphs each real and each fake pieces of news made according to the keywords we looked up.
@@ -14,6 +15,7 @@ Script includes code to download csv data through pandas
 		real news reported than in comparison to their fake news counterpart, however, news about hillary clinton seems to be the exception in this case. 
 
 3. Count a word in the text of fake news and real news and make a graph for word frequency. As we can see from the two graph, there is also no big difference between the word frequency in the text of fake news and that of real news. So we should remove the word like "the", "and", "to" and so on and make the same graphs and compare them. 
+
 
 
 
