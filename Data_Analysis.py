@@ -1,20 +1,7 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import requests
-CSV_URL = "https://github.com/bursteinalan/Data-Sets/raw/master/Fake%20News/news.csv"
-df = pd.read_csv(CSV_URL)
+import script
 
-data_frame = pd.DataFrame(df)
-
-
-
-# Downloading a data set
-
-#r = requests.get(CSV_URL, allow_redirects=True)
-#content = r.content
-#r.content.decode("utf-8")[:100]
-#file = 't.csv'
-#open(file, 'wb').write(content)
+df = script.df
+data_frame = script.data_frame
 
 # 1. Count the number of fake and real news
 df_1 = df.groupby(['label'])['label'].count()
