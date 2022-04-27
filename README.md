@@ -21,3 +21,11 @@ Script includes code to download csv data through pandas
 
 
 
+4/27 Deliverable:
+We first made adjustments to our submission based on the feedback including separating the download script with the data analysis.
+To make sure we are both well versed in trying to understand how the Machine Learning and training/modeling data works, we decided to 
+both do a version of trying to use a classifier model. 
+
+Ross: I created the file Machine Learning Classifier and prediction model.ipynb, processed the data byb removing useless words from the data,
+	converted strings to integer counts, split the data for training, and created/used a classifier model from sklearn and printed a classification 
+	report as well as a few bar graphs to display. 
